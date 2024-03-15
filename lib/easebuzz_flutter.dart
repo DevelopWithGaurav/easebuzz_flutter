@@ -10,6 +10,8 @@ class EasebuzzFlutter {
     try {
       final paymentResponse = await _channel.invokeMethod("payWithEasebuzz", parameters);
       return paymentResponse;
-    } catch (e) {}
+    } catch (e) {
+      //
+    }
   }
 }
